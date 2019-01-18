@@ -9,7 +9,9 @@
 import UIKit
 
 class MainView: UIView {
-
+  
+  private var cellID = "Cell ID"
+  
   var mainCollectionView: UICollectionView = {
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -27,5 +29,8 @@ class MainView: UIView {
   private func configureCollectionView() {
     addSubview(mainCollectionView)
     mainCollectionView.fillSuperview()
+    
+    mainCollectionView.register(MainCollectionViewCell.self, forCellWithReuseIdentifier: cellID)
+    
   }
 }

@@ -13,6 +13,7 @@
 		17FED32021F25FAF008F676D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FED31F21F25FAF008F676D /* MainViewController.swift */; };
 		17FED32221F262A6008F676D /* UIView+ConstraintExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FED32121F262A6008F676D /* UIView+ConstraintExtensions.swift */; };
 		17FED32421F2693B008F676D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FED32321F2693B008F676D /* MainView.swift */; };
+		17FF333621F27809000CE2F0 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FF333521F27809000CE2F0 /* MainCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		17FED31F21F25FAF008F676D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		17FED32121F262A6008F676D /* UIView+ConstraintExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ConstraintExtensions.swift"; sourceTree = "<group>"; };
 		17FED32321F2693B008F676D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		17FF333521F27809000CE2F0 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		17FED30C21F25E03008F676D /* StretchyHeaderDemo */ = {
 			isa = PBXGroup;
 			children = (
-				17FED30D21F25E03008F676D /* AppDelegate.swift */,
-				17FED31F21F25FAF008F676D /* MainViewController.swift */,
+				17FF333421F277E8000CE2F0 /* Supporting Files */,
 				17FED32321F2693B008F676D /* MainView.swift */,
+				17FED31F21F25FAF008F676D /* MainViewController.swift */,
+				17FF333521F27809000CE2F0 /* MainCollectionViewCell.swift */,
 				17FED31421F25E06008F676D /* Assets.xcassets */,
-				17FED31621F25E06008F676D /* LaunchScreen.storyboard */,
 				17FED31921F25E06008F676D /* Info.plist */,
-				17FED32121F262A6008F676D /* UIView+ConstraintExtensions.swift */,
 			);
 			path = StretchyHeaderDemo;
+			sourceTree = "<group>";
+		};
+		17FF333421F277E8000CE2F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17FED30D21F25E03008F676D /* AppDelegate.swift */,
+				17FED31621F25E06008F676D /* LaunchScreen.storyboard */,
+				17FED32121F262A6008F676D /* UIView+ConstraintExtensions.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				17FED32221F262A6008F676D /* UIView+ConstraintExtensions.swift in Sources */,
 				17FED32421F2693B008F676D /* MainView.swift in Sources */,
+				17FF333621F27809000CE2F0 /* MainCollectionViewCell.swift in Sources */,
 				17FED30E21F25E03008F676D /* AppDelegate.swift in Sources */,
 				17FED32021F25FAF008F676D /* MainViewController.swift in Sources */,
 			);

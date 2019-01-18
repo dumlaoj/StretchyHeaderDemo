@@ -10,16 +10,48 @@ import UIKit
 
 class MainViewController: UIViewController {
   
+  private let cellID = "Cell ID"
+  private let headerID = "Header ID"
+  private let insetPadding: CGFloat = 16
+  var mainView = MainView()
+  
   override func loadView() {
     super.loadView()
-    let mainView = MainView()
     view = mainView
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    configureCollectionView()
   }
   
+  private func configureCollectionView() {
+    let collectionView = mainView.mainCollectionView
+    collectionView.dataSource = self
+    collectionView.delegate = self
+    if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+      layout.sectionInset = UIEdgeInsets(top: insetPadding, left: insetPadding, bottom: insetPadding, right: insetPadding)
+    }
+  }
+}
+
+extension MainViewController: UICollectionViewDataSource {
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return 20
+  }
   
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath)
+    cell.backgroundColor = .black
+    return cell
+  }
+}
+
+extension MainViewController: UICollectionViewDelegate {
+}
+
+extension MainViewController: UICollectionViewDelegateFlowLayout {
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    return CGSize(width: view.frame.width - insetPadding * 2, height: 75)
+  }
 }
