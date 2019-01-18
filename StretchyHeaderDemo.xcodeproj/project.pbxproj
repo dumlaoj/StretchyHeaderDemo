@@ -64,9 +64,9 @@
 				17FED32321F2693B008F676D /* MainView.swift */,
 				17FED31F21F25FAF008F676D /* MainViewController.swift */,
 				17FF333521F27809000CE2F0 /* MainCollectionViewCell.swift */,
+				17FF333721F27B21000CE2F0 /* HeaderView.swift */,
 				17FED31421F25E06008F676D /* Assets.xcassets */,
 				17FED31921F25E06008F676D /* Info.plist */,
-				17FF333721F27B21000CE2F0 /* HeaderView.swift */,
 			);
 			path = StretchyHeaderDemo;
 			sourceTree = "<group>";

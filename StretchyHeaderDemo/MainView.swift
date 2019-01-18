@@ -16,7 +16,7 @@ class MainView: UIView {
   var mainCollectionView: UICollectionView = {
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     collectionView.translatesAutoresizingMaskIntoConstraints = false
-    collectionView.backgroundColor = .red
+    collectionView.backgroundColor = .white
     return collectionView
   }()
   

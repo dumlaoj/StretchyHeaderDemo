@@ -33,6 +33,7 @@ class MainViewController: UIViewController {
     if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
       layout.sectionInset = UIEdgeInsets(top: insetPadding, left: insetPadding, bottom: insetPadding, right: insetPadding)
     }
+    collectionView.contentInsetAdjustmentBehavior = .never
   }
 }
 
