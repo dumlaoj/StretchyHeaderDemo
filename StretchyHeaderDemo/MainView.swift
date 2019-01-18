@@ -14,7 +14,7 @@ class MainView: UIView {
   private let headerID = "Header ID"
 
   var mainCollectionView: UICollectionView = {
-    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: StretchyLayout())
     collectionView.translatesAutoresizingMaskIntoConstraints = false
     collectionView.backgroundColor = .white
     return collectionView

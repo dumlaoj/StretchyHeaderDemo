@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17E94E5B21F2991C005D73E5 /* StretchyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E94E5A21F2991C005D73E5 /* StretchyLayout.swift */; };
 		17FED30E21F25E03008F676D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FED30D21F25E03008F676D /* AppDelegate.swift */; };
 		17FED31521F25E06008F676D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17FED31421F25E06008F676D /* Assets.xcassets */; };
 		17FED31821F25E06008F676D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17FED31621F25E06008F676D /* LaunchScreen.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17E94E5A21F2991C005D73E5 /* StretchyLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyLayout.swift; sourceTree = "<group>"; };
 		17FED30A21F25E03008F676D /* StretchyHeaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StretchyHeaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17FED30D21F25E03008F676D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17FED31421F25E06008F676D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				17FED31F21F25FAF008F676D /* MainViewController.swift */,
 				17FF333521F27809000CE2F0 /* MainCollectionViewCell.swift */,
 				17FF333721F27B21000CE2F0 /* HeaderView.swift */,
+				17E94E5A21F2991C005D73E5 /* StretchyLayout.swift */,
 				17FED31421F25E06008F676D /* Assets.xcassets */,
 				17FED31921F25E06008F676D /* Info.plist */,
 			);
@@ -156,6 +159,7 @@
 				17FED32421F2693B008F676D /* MainView.swift in Sources */,
 				17FF333621F27809000CE2F0 /* MainCollectionViewCell.swift in Sources */,
 				17FED30E21F25E03008F676D /* AppDelegate.swift in Sources */,
+				17E94E5B21F2991C005D73E5 /* StretchyLayout.swift in Sources */,
 				17FED32021F25FAF008F676D /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
