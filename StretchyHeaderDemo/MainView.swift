@@ -11,7 +11,8 @@ import UIKit
 class MainView: UIView {
   
   private var cellID = "Cell ID"
-  
+  private let headerID = "Header ID"
+
   var mainCollectionView: UICollectionView = {
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -31,6 +32,7 @@ class MainView: UIView {
     mainCollectionView.fillSuperview()
     
     mainCollectionView.register(MainCollectionViewCell.self, forCellWithReuseIdentifier: cellID)
+    mainCollectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerID)
     
   }
 }

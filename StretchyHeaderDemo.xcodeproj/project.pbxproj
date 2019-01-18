@@ -14,6 +14,7 @@
 		17FED32221F262A6008F676D /* UIView+ConstraintExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FED32121F262A6008F676D /* UIView+ConstraintExtensions.swift */; };
 		17FED32421F2693B008F676D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FED32321F2693B008F676D /* MainView.swift */; };
 		17FF333621F27809000CE2F0 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FF333521F27809000CE2F0 /* MainCollectionViewCell.swift */; };
+		17FF333821F27B21000CE2F0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FF333721F27B21000CE2F0 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		17FED32121F262A6008F676D /* UIView+ConstraintExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ConstraintExtensions.swift"; sourceTree = "<group>"; };
 		17FED32321F2693B008F676D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		17FF333521F27809000CE2F0 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		17FF333721F27B21000CE2F0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				17FF333521F27809000CE2F0 /* MainCollectionViewCell.swift */,
 				17FED31421F25E06008F676D /* Assets.xcassets */,
 				17FED31921F25E06008F676D /* Info.plist */,
+				17FF333721F27B21000CE2F0 /* HeaderView.swift */,
 			);
 			path = StretchyHeaderDemo;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17FED32221F262A6008F676D /* UIView+ConstraintExtensions.swift in Sources */,
+				17FF333821F27B21000CE2F0 /* HeaderView.swift in Sources */,
 				17FED32421F2693B008F676D /* MainView.swift in Sources */,
 				17FF333621F27809000CE2F0 /* MainCollectionViewCell.swift in Sources */,
 				17FED30E21F25E03008F676D /* AppDelegate.swift in Sources */,

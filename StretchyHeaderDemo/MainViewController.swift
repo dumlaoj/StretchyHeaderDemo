@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
   private let cellID = "Cell ID"
   private let headerID = "Header ID"
   private let insetPadding: CGFloat = 16
+  private var header: HeaderView?
   var mainView = MainView()
   
   override func loadView() {
@@ -48,10 +49,23 @@ extension MainViewController: UICollectionViewDataSource {
 }
 
 extension MainViewController: UICollectionViewDelegate {
+  
 }
 
 extension MainViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     return CGSize(width: view.frame.width - insetPadding * 2, height: 75)
   }
+  
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+    return CGSize(width: view.frame.width, height: 300)
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+    let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerID, for: indexPath)
+    header = headerView as? HeaderView
+    return headerView
+  }
 }
+
+
