@@ -10,27 +10,16 @@ import UIKit
 
 class MainViewController: UIViewController {
   
-  var mainCollectionView: UICollectionView = {
-    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-    collectionView.translatesAutoresizingMaskIntoConstraints = false
-    collectionView.backgroundColor = .red
-    return collectionView
-  }()
+  override func loadView() {
+    super.loadView()
+    let mainView = MainView()
+    view = mainView
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-//
-//    self.view.addSubview(mainCollectionView)
-//    mainCollectionView.fillSuperview()
     
-    self.view.backgroundColor = .blue
-    
-    let tempView = UIView()
-    tempView.translatesAutoresizingMaskIntoConstraints = false
-    tempView.backgroundColor = .red
-    
-    view.addSubview(tempView)
-    tempView.fillSuperview()
   }
+  
   
 }

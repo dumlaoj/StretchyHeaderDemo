@@ -12,6 +12,7 @@
 		17FED31821F25E06008F676D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17FED31621F25E06008F676D /* LaunchScreen.storyboard */; };
 		17FED32021F25FAF008F676D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FED31F21F25FAF008F676D /* MainViewController.swift */; };
 		17FED32221F262A6008F676D /* UIView+ConstraintExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FED32121F262A6008F676D /* UIView+ConstraintExtensions.swift */; };
+		17FED32421F2693B008F676D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FED32321F2693B008F676D /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		17FED31921F25E06008F676D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17FED31F21F25FAF008F676D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		17FED32121F262A6008F676D /* UIView+ConstraintExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ConstraintExtensions.swift"; sourceTree = "<group>"; };
+		17FED32321F2693B008F676D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				17FED30D21F25E03008F676D /* AppDelegate.swift */,
 				17FED31F21F25FAF008F676D /* MainViewController.swift */,
+				17FED32321F2693B008F676D /* MainView.swift */,
 				17FED31421F25E06008F676D /* Assets.xcassets */,
 				17FED31621F25E06008F676D /* LaunchScreen.storyboard */,
 				17FED31921F25E06008F676D /* Info.plist */,
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17FED32221F262A6008F676D /* UIView+ConstraintExtensions.swift in Sources */,
+				17FED32421F2693B008F676D /* MainView.swift in Sources */,
 				17FED30E21F25E03008F676D /* AppDelegate.swift in Sources */,
 				17FED32021F25FAF008F676D /* MainViewController.swift in Sources */,
 			);
