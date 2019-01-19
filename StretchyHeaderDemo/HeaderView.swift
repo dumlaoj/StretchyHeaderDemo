@@ -25,6 +25,16 @@ class HeaderView: UICollectionReusableView {
       imageView.image = newValue }
   }
   
+  private var blurView: UIVisualEffectView?
+  
+  private var animator: UIViewPropertyAnimator?
+  
+  var fractionComplete: CGFloat = 0 {
+    didSet {
+      animator?.fractionComplete = self.fractionComplete / 100
+    }
+  }
+  
   override init(frame: CGRect) {
     super.init(frame: frame)
     self.backgroundColor = .white
@@ -32,6 +42,19 @@ class HeaderView: UICollectionReusableView {
     
     addSubview(imageView)
     imageView.fillSuperview()
+    addBlur()
+  }
+  
+  private func addBlur() {
+    
+    animator = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: { [weak self] in
+      guard let self = self else { return }
+      let blurEffect = UIBlurEffect(style: .regular)
+      self.blurView = UIVisualEffectView(effect: blurEffect)
+      self.blurView?.translatesAutoresizingMaskIntoConstraints = false
+      self.addSubview(self.blurView!)
+      self.blurView!.fillSuperview()
+    })
   }
   
   required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }

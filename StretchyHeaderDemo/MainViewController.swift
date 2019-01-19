@@ -50,7 +50,13 @@ extension MainViewController: UICollectionViewDataSource {
 }
 
 extension MainViewController: UICollectionViewDelegate {
-  
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    let contentOffsetY = scrollView.contentOffset.y
+    print(contentOffsetY)
+    if contentOffsetY < 0 {
+     header?.fractionComplete = -contentOffsetY
+    }
+  }
 }
 
 extension MainViewController: UICollectionViewDelegateFlowLayout {
